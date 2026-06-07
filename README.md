@@ -1,9 +1,10 @@
 # AI Marketing Automation Platform
 
-A simple, modular platform to automate marketing workflows using AI agents.
+Automate marketing workflows using configurable AI agents.
 
-- Config-driven agents and tasks in `config/`
-- Entry point: `crew.py`
+Overview
+
+This repository provides a small, configurable framework for running AI-driven marketing tasks (research, content generation, SEO helpers, etc.) via agents defined in `config/`.
 
 Quick start
 
@@ -11,7 +12,7 @@ Quick start
 
 ```powershell
 python -m venv .venv
-.\\.venv\\Scripts\\Activate.ps1
+.\.venv\Scripts\Activate.ps1
 ```
 
 2. Install dependencies:
@@ -26,11 +27,16 @@ pip install -r requirements.txt
 python crew.py
 ```
 
+Configuration
+
+- Define agents in `config/agents.yaml` and tasks in `config/tasks.yaml`.
+- The app reads those files at runtime to run workflows.
+
 Contributing
 
-- Edit or add agents in `config/agents.yaml` and tasks in `config/tasks.yaml`.
-- Open a PR with a clear description and tests where applicable.
+- Make changes on a branch, open a PR, and include a short description.
+- Keep changes small and focused; add tests when practical.
 
 License
 
-MIT (or change to preferred license)
+MIT. Change to your preferred license if needed.
