@@ -1,42 +1,117 @@
-# AI Marketing Automation Platform
+# AI-Powered Marketing Automation Platform
 
-Automate marketing workflows using configurable AI agents.
+A multi-agent AI marketing platform built using CrewAI and Gemini 2.5 Flash that automates market research, marketing strategy development, content planning, content creation, blog writing, and SEO optimization.
 
-Overview
+## Overview
 
-This repository provides a small, configurable framework for running AI-driven marketing tasks (research, content generation, SEO helpers, etc.) via agents defined in `config/`.
+Marketing teams often spend significant time researching markets, creating content strategies, drafting social media posts, writing blogs, and optimizing content for search engines. This project streamlines these activities by orchestrating multiple specialized AI agents that collaborate to generate a complete marketing workflow.
 
-Quick start
+The platform leverages CrewAI's multi-agent framework to coordinate marketing experts, content creators, blog writers, and SEO specialists, enabling businesses to automate large portions of their content marketing process.
 
-1. Create and activate a Python virtual environment:
+## Features
 
-```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
+* Market Research Automation
 
-2. Install dependencies:
+  * Competitor and industry analysis
+  * Trend identification
+  * Audience research
 
-```powershell
-pip install -r requirements.txt
-```
+* Marketing Strategy Generation
 
-3. Run the app:
+  * Campaign planning
+  * Marketing recommendations
+  * Strategic content direction
 
-```powershell
-python crew.py
-```
+* Content Calendar Creation
 
-Configuration
+  * Content scheduling
+  * Topic planning
+  * Platform-specific content organization
 
-- Define agents in `config/agents.yaml` and tasks in `config/tasks.yaml`.
-- The app reads those files at runtime to run workflows.
+* Social Media Content Generation
 
-Contributing
+  * Post drafts
+  * Captions
+  * Marketing copy
 
-- Make changes on a branch, open a PR, and include a short description.
-- Keep changes small and focused; add tests when practical.
+* Blog Content Creation
 
-License
+  * Topic research
+  * Blog drafting
+  * Long-form content generation
 
-MIT. Change to your preferred license if needed.
+* SEO Optimization
+
+  * SEO-focused content refinement
+  * Keyword integration
+  * Search visibility improvements
+
+## Architecture
+
+The system consists of four specialized AI agents:
+
+### Head of Marketing
+
+Responsible for:
+
+* Market research
+* Marketing strategy development
+* Campaign planning
+
+### Content Creator (Social Media)
+
+Responsible for:
+
+* Content calendar generation
+* Social media post creation
+* Reel script generation
+
+### Content Writer (Blogs)
+
+Responsible for:
+
+* Blog topic research
+* Blog drafting
+* Long-form content creation
+
+### SEO Specialist
+
+Responsible for:
+
+* SEO analysis
+* Content optimization
+* Search engine visibility improvements
+
+## Tech Stack
+
+### AI & Agent Framework
+
+* CrewAI
+* Google Gemini 2.5 Flash
+
+### Development
+
+* Python
+* Pydantic
+* Python Dotenv
+
+### Tools
+
+* SerperDevTool
+* ScrapeWebsiteTool
+* DirectoryReadTool
+* FileReadTool
+* FileWriterTool
+
+## Workflow
+
+1. Conduct market research
+2. Generate marketing strategy
+3. Create content calendar
+4. Draft social media content
+5. Generate reel scripts
+6. Research blog topics
+7. Draft blog content
+8. Perform SEO optimization
+
+The entire workflow is executed sequentially through CrewAI's orchestration engine.
